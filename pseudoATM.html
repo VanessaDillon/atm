@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ATM Pseudocode</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .header {
+            color: mintcream;
+            font-size: 75px;
+        }
+        body {
+            background-color:mediumpurple;
+            font-size: 20px;
+            color: moccasin;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-sm-12">
+                <h1 class = "header">ATM PSEUDOCODE:</h1> <!--header-->
+            </div>
+            <div class = "col-sm-6">
+                <h2>TO DO</h2>
+                <ul>
+                    <li>make a deposit</li>
+                    <li>checking/savings accounts</li>
+                    <li>check balance</li>
+                </ul>
+
+                <h2>Variables</h2>
+                <ul>
+                    <li>SET username equal to zero</li>
+                    <li>SET password char for atm</li>
+                    <li>SET input tries of password</li>
+                    <li>SET current balance to 50000</li>
+                
+                </ul>
+
+                <h2>Logic</h2>
+            
+
+                <h3>Deposit</h3>
+                <ul>
+                    <li>DISPLAY "How much would you like to deposit?"</li>
+                    <li>IF amount is ok</li>
+                    <li>ADD currentBalance and depositAmount</li>
+                    <li>ELSE</li>
+                    <li>DISPLAY "Error enter a number"</li>
+                </ul>
+
+                
+                <h3>PIN</h3>
+                <ul>
+                    <li>DISPLAY "Enter your PIN code"</li>
+                    <li>INPUT pin</li>
+                    <li>IF pin is not ok</li>
+                    <li>DISPLAY "PIN is invalid. Please try again."</li>
+                    <li>GOTO PIN</li>
+                    <li>ELSE</li>
+                </ul>
+
+                <h3>DASHBOARD</h3>
+                <ul>
+                    <li>DISPLAY "Welcome to Nessa's ATM! Please login"</li>
+                    <li>INPUT field username and password</li>
+                    <li>DISPLAY options</li>
+                    <li>INPUT options</li>
+                     
+                </ul>
+            </div>
+
+            <div class = "col-sm-6">
+                <h2>Functions</h2>
+                    <!--checkBalance MOD-->
+                    <h3>MODULE inquiry CHECKS amount</h3>
+                    <ul>
+                        <li>DISPLAY currentBalance</li>
+                    </ul>
+                    <!--getUserAccount MOD-->
+                    <h3>MODULE Deposit</h3>
+                    
+                    <ul>
+                        <li>DISPLAY "How much would you like to deposit?"</li>
+                        <li>IF amount is ok</li>
+                        <li>ADD currentBalance and depositAmount</li>
+                        <li>ELSE</li>
+                        <li>DISPLAY "Error, please enter a number"</li>
+                    </ul>
+                    
+                    <!--testing-->
+                    <h2>TESTING METHODS</h2>
+                    <ul>
+                
+                        <li>I try to deposit an amount less than the minimum</li>
+                        <li>I try to withdrawal more money than I currently have from checking.</li>
+                        <li>I deposit an amount into the atm</li>
+                        <li>I withdraw an amount from the atm</li>
+                        <li>ETC.</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Be able to: 
+        Accept a card, 
+        ask how much they want, 
+        Take PIN number (assume always correct), 
+        Withdrawal amount, 
+        check balance to see if you have enough ..if not "You have insufficient funds"
+    -->
+    <!--add in the ability to check if the card is valid-->
+
+</body>
+</html>
