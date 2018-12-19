@@ -23,19 +23,19 @@ function selectFunction() {
 	if (atmFunctions !== "" && atmFunctions !== null && !isNaN(atmFunctions)) {
 		switch (atmFunctions) {
 			case 1:
-				inquiry();
+				inquiry(); // check balance
 				break;
 			case 2:
-				withdrawal();
+				withdrawal(); // take out
 				break;
 			case 3:
-				deposit();
+				deposit(); // put in
 				break;
 			case 4:
-				exit();
+				exit(); // goodbye
 				break;
 			default:
-				alert("Please make a valid selection");
+				alert("Please make a valid selection"); // i dont understand
 				selectFunction();
 		}
 	} else {
@@ -44,15 +44,15 @@ function selectFunction() {
 	}
 }
 // checkBalance function
-function inquiry() {
+function inquiry() { //current balance is set
 	alert("Your current balance is $" + currentBalance);
 	toContinue();
 }
 // Deposit function
-function deposit() {
+function deposit() { //users amount wanted to deposit..
 	var depositAmount = parseInt(prompt("How much do you want to deposit?"));
 	if (depositAmount !== "" && depositAmount !== null && !isNaN(depositAmount)) {
-		currentBalance += depositAmount;
+		currentBalance += depositAmount; // plus current balance
 		alert("You have successfully deposited $" + depositAmount + "\n" + "You now have $" + currentBalance);
 		toContinue();
 	} else {
@@ -64,8 +64,8 @@ function deposit() {
 function withdrawal() {
 	var withdrawalAmount = parseInt(prompt("How much do you want to withdraw? \n" + "The minimum amount you can withdraw is $1000"));
 	if (withdrawalAmount !== "" && withdrawalAmount !== null && !isNaN(withdrawalAmount)) {
-		if (withdrawalAmount >= 1000) {
-			if (withdrawalAmount <= currentBalance) {
+		if (withdrawalAmount >= 1000) { //if the withdrawal amount is greater than 1000..
+			if (withdrawalAmount <= currentBalance) { //and is equal to the cuurent balance..
 				currentBalance -= withdrawalAmount;
 				alert("Your transaction was successful!");
 				alert("Your remaining balance is $" + currentBalance);
@@ -74,7 +74,7 @@ function withdrawal() {
 				alert("You do not have enough funds!");
 				withdrawal();
 			}
-		} else {
+		} else { 
 			alert("You need to withdraw at least $1000");
 			withdrawal();
 		}
@@ -84,7 +84,7 @@ function withdrawal() {
 	}
 }	
 // Do you want to continue using?
-function toContinue(){
+function toContinue(){ 
     var yesOrNo = parseInt(prompt("Do you want to perform another transaction? \n 1. Yes \n 2. No"));
 	if (yesOrNo !== "" && yesOrNo !== null) {
     	if (yesOrNo === 2){
