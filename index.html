@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bank o' Nessa</title>
+    <link rel="stylesheet" href="css/notherstyle.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="usenav">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Bank o' Nessa</h2>
+            </div>
+            <div class="col-sm-6">
+                <img src="../atm/images/sunfloweredit.png" alt="sunflower clipart" class="sunflower">
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="row">
+            <div class="col-sm-12 back">
+                <div class="row">
+                    <div class="pressme">
+                        <ul class="pbutt">
+                            <li><button id="press"></button></li>
+                            <li><button id="press"></button></li>
+                            <li><button id="press"></button></li>
+                        </ul>
+                        <ul class="dbutt">
+                            <li><button id="press"></button></li>
+                            <li><button class="next" onclick="myFunctiontwo()">ENTER</button></li>
+                            <li><button></button></li>
+                        </ul>
+                    </div>
+
+                    <div class="atmscreen" id="lbpanel">
+                        <div class="loginbox" id="loginbox" >
+                            <p class="welcome">Welcome to Nessa's ATM! Please login.</p>
+                            <i class="fas fa-user"></i>
+                            <h1>Login Here</h1>
+                            <form>
+                                <p>Username</p>
+                                <input type="text" placeholder="Enter Username">
+                                <p>Password</p>
+                                <input type="password" placeholder="Enter Password">
+                                <input type="submit" value="Login" target="_self" class="login" onclick="myFunctionnn()"> <!--login button-->
+                                <a href="#">Lost your password?</a><br>
+                                <a href="#">Don't have an account?</a>
+                            </form>
+                        </div>
+
+                        <div id="options">
+                            <p class="options">Please click the button to choose which Online ATM Service you need.</p>
+                            <button type="submit" value="Services" onclick="selectFunction()" id="service"></button>
+                        </div>
+                    </div>
+
+                    <div class="keypad">
+                        <div class="keyrow">
+                            <table class="table">
+                                <tr><!--first row-->
+                                    <th><button>1</button></th>
+                                    <th><button>2</button></th>
+                                    <th><button>3</button></th>
+                                    <th><button id="cancel">CANCEL</button></th>
+                                </tr>
+                        <div class="keyrow">
+                                <tr>
+                                    <th><button>4</button></th>
+                                    <th><button>5</button></th>
+                                    <th><button>6</button></th>
+                                    <th><button id="clear">CLEAR</button></th>
+                                </tr>
+                        <div class="keyrow">
+                                <tr>
+                                    <th><button>7</button></th>
+                                    <th><button>8</button></th>
+                                    <th><button>9</button></th>
+                                    <th><button id="enter">ENTER</button></th>
+                                </tr>
+                        <div class="keyrow">
+                                <tr>
+                                    <td><button id="spacer">&lt;</button></td>
+                                    <th><button>0</button></th>
+                                    <td><button id="spacer">&gt;</button></td>
+                                </tr>
+                            </div></div></div></div>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="cardreader"></div>
+        <div class="dispenser"></div>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

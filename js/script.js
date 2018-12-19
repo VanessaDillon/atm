@@ -3,19 +3,18 @@ var username,
 	passTry = 3,
 	currentBalance = 50000;
 
-function myFunction(){
-    document.getElementById("lbpanel").style.display = "block";
+function myFunction(){ //show panel for loginbox
+	document.getElementById("lbpanel").style.display = "block";
+	event.preventDefault();
 }
-function myFunctionnn(){
+function myFunctionnn(){ //no loginbox, show options
 	document.getElementById("loginbox").style.display = "none";
 	document.getElementById("options").style.display = "block";
-	
-	event.preventDefault;
-	
+	event.preventDefault();
 }
-function myFunctiontwo(){
+function myFunctiontwo(){ //changes to loginbox
 	document.getElementById("loginbox").style.display = "block";
-	event.preventDefault;
+	event.preventDefault();
 }
 
 // Select what the user wishes to do
